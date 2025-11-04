@@ -1,4 +1,5 @@
 CREATE DATABASE IF NOT EXISTS hospital_estoque CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 USE hospital_estoque;
 
 CREATE TABLE IF NOT EXISTS Hospitais (
