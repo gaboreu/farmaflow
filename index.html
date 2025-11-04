@@ -1,0 +1,59 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Hospitalar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Estoque Hospitalar</h2>
+            <ul>
+                <li class="active"><a>O Dashboard</a></li>
+                <li><a>Movimentações</a></li>
+                <li><a>Reposição Automática</a></li>
+                <li><a>Relatórios</a></li>
+            </ul>
+        </nav>
+
+        <main class="dashboard">
+            <section class="kpi-cards">
+                <div class="card">
+                    <h3>Itens em Estoque</h3>
+                    <span id="kpi-total-itens">...</span>
+                </div>
+                <div class="card">
+                    <h3>Itens Críticos</h3>
+                    <span id="kpi-itens-criticos">...</span>
+                </div>
+                <div class="card">
+                    <h3>Movimentações Hoje</h3>
+                    <span id="kpi-mov-hoje">...</span>
+                </div>
+            </section>
+
+            <section id="alertas-container" class="alertas-section">
+                </section>
+            
+            <section class="estoque-setor">
+                <h2>Estoque por Setor</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Setor</th>
+                            <th>Saldo</th>
+                            <th>Saída (Exemplo)</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-estoque-setor">
+                        </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
