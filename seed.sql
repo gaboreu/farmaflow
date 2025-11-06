@@ -26,9 +26,9 @@ VALUES
 
 INSERT INTO UsuarioPerfis (usuario_id, perfil_id)
 VALUES
-(1, 1), -- admin é Admin
-(2, 2), -- willian é Farmacêutico
-(3, 3); -- livia é Enfermeiro
+(1, 1), 
+(2, 2), 
+(3, 3); 
 
 INSERT INTO ItemCatalogo (id, nome, unidade_medida, storage_req)
 VALUES
@@ -44,19 +44,19 @@ VALUES
 
 INSERT INTO ItemLotes (item_catalogo_id, setor_id, numero_lote, saldo, data_validade, nivel_minimo)
 VALUES
-(2, 3, 'LOTE-H-22B', 6, '2026-05-15', 5); -- Nível mínimo 5, saldo 6 = Atenção [cite: 297, 298]
+(2, 3, 'LOTE-H-22B', 6, '2026-05-15', 5);
 
 INSERT INTO ItemLotes (item_catalogo_id, setor_id, numero_lote, saldo, data_validade, nivel_minimo)
 VALUES
-(3, 4, 'LOTE-F-33C', 2, '2026-08-20', 5); -- Nível mínimo 5, saldo 2 = Crítico [cite: 301, 304, 299]
+(3, 4, 'LOTE-F-33C', 2, '2026-08-20', 5); 
 
 INSERT INTO ItemLotes (item_catalogo_id, setor_id, numero_lote, saldo, data_validade, nivel_minimo)
 VALUES
-(4, 5, 'LOTE-A-44D', 1, '2026-12-01', 4); -- Nível mínimo 4, saldo 1 = Alerta Crítico [cite: 300, 305]
+(4, 5, 'LOTE-A-44D', 1, '2026-12-01', 4); 
 
 INSERT INTO ItemLotes (item_catalogo_id, setor_id, numero_lote, saldo, data_validade, nivel_minimo)
 VALUES
-(5, 4, 'LOTE-P-55E', 1, '2026-11-25', 5); -- Nível mínimo 5, saldo 1 = Alerta Crítico [cite: 290, 302]
+(5, 4, 'LOTE-P-55E', 1, '2026-11-25', 5);
 
 INSERT INTO Movimentacoes (item_lote_id, usuario_id, tipo, quantidade, setor_origem_id, setor_destino_id, observacao)
 VALUES
@@ -73,5 +73,5 @@ VALUES
 
 INSERT INTO PedidoItens (pedido_id, item_catalogo_id, quantidade_solicitada)
 VALUES
-(1, 2, 50), -- Pedido de Heparina
-(1, 3, 100); -- Pedido de Fentanil
+(1, 2, 50), 
+(1, 3, 100); 
